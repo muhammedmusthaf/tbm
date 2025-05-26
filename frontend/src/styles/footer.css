@@ -1,0 +1,203 @@
+/* footer.css */
+.footer-container {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white;
+  padding: 40px 20px 20px;
+  border-top: 3px solid #302b63;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Logo section styling */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 300px;
+}
+
+.footer-logo {
+  width: 120px;
+  height: auto;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 5px white);
+}
+
+.company-description {
+  color: #ddd;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  max-width: 100%;
+}
+
+.footer-heading {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.footer-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background: #302b63;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li,
+.contact-info li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #FFB400;
+  text-decoration: underline;
+}
+
+.address {
+  line-height: 1.6;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.social-credit {
+  border-top: 1px solid #444;
+  padding-top: 30px;
+  margin-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  font-size: 1.8rem;
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #302b63;
+  transform: translateY(-3px);
+}
+
+.credit-text {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: left;
+    padding: 0 10px;
+  }
+  
+  .logo-section {
+    align-items: flex-start;
+    order: -1;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+  
+  .footer-logo {
+    width: 100px;
+  }
+  
+  .footer-heading::after {
+    left: 0;
+    transform: none;
+  }
+  
+  .footer-links li,
+  .contact-info li {
+    justify-content: flex-start;
+  }
+  
+  .address {
+    text-align: left;
+  }
+  
+  /* Only center the social links and credit text */
+  .social-credit {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-section {
+    min-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    width: 100px;
+  }
+  
+  .social-links {
+    gap: 20px;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+  }
+  
+  .footer-heading {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+}

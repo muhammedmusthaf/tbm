@@ -1,0 +1,182 @@
+/* transport.css */
+.transport-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 💥 this centers the two sides */
+    gap: 60px; /* more breathing room between video & text */
+    background: #ffffff; /* Changed to white for better contrast */
+    margin-left: 150px;
+    padding: 60px 30px; /* Increased padding for a more spacious feel */
+    position: relative;
+    overflow: hidden;
+
+
+  }
+  
+.video-container {
+  flex: 1;
+  max-width: 500px;
+  border-radius: 15px;
+  overflow: hidden;
+  transform: translateX(0); /* No horizontal shift */
+  opacity: 0;
+  animation: slideIn 1s forwards;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  border: 10px solid #302b63;
+  padding: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center; /* Center video inside */
+  align-items: center;
+}
+
+  
+  .transport-video {
+    width: 100%;
+    height: 300px; /* clean height */
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  .video-container:hover .transport-video {
+    transform: scale(1.025);
+  }
+  
+  
+  .content-container {
+    flex: 1;
+    padding: 30px;
+    transform: translateX(50px);
+    opacity: 0;
+    animation: slideIn 1s 0.3s forwards;
+  }
+  
+  .banner-title {
+    font-size: 2.5rem;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+    line-height: 1.3;
+  }
+  
+  .banner-text {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 35px;
+    line-height: 1.6;
+  }
+  
+  .book-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 35px;
+    background: linear-gradient(to right, #25D366, #128C7E);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(18,140,126,0.3);
+  }
+  
+  .book-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(18,140,126,0.4);
+  }
+  
+  .whatsapp-icon {
+    font-size: 1.5rem;
+  }
+  
+  @keyframes slideIn {
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+ 
+  
+  @keyframes mobileSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @media screen and (max-width: 768px) {
+  .transport-banner {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .video-container {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .transport-video {
+    height: 250px;
+  }
+
+  .content-container {
+    padding: 20px;
+    text-align: center;
+    transform: translateX(0);
+    animation: slideIn 1s forwards;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .banner-text {
+    font-size: 1.1rem;
+  }
+
+  .book-button {
+    padding: 12px 28px;
+    font-size: 1rem;
+  }
+
+  .whatsapp-icon {
+    font-size: 1.3rem;
+  }
+}
+
+/* 🔽 Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+  .transport-banner {
+    padding: 30px 15px;
+    gap: 30px;
+  }
+
+  .transport-video {
+    width: 400px;
+  }
+
+  .banner-title {
+    font-size: 1.7rem;
+  }
+
+  .banner-text {
+    font-size: 1rem;
+  }
+
+  .book-button {
+    padding: 10px 24px;
+    font-size: 0.95rem;
+  }
+
+  .whatsapp-icon {
+    font-size: 1.2rem;
+  }
+}

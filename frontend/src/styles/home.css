@@ -1,0 +1,160 @@
+/* Home.css */
+
+.home-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Slideshow styles */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* or you can try 90vh/auto if you want scroll */
+}
+
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Updated overlay to match logo's color scheme */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+
+}
+
+/* Hero content styles */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 20px;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+}
+
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6), 0 0 20px rgba(0, 0, 255, 0.4);
+}
+
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 32px;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: #333;
+    transform: translateY(-2px);
+}
+
+/* Home.css - Mobile Responsive Additions */
+/* Update existing media queries in Home.css */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      margin-bottom: 15px;
+      padding: 0 10px;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin-bottom: 20px;
+      padding: 0 15px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hero-content {
+      width: 90%;
+      padding: 15px 10px;
+      margin-top: 50px;
+    }
+  
+    .hero-content h1 {
+      font-size: 1.6rem;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      text-shadow: 0 0 6px rgba(255, 0, 0, 0.4), 0 0 12px rgba(0, 0, 255, 0.2);
+      word-spacing: -1px;
+    }
+  
+    .hero-content p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 18px;
+      padding: 0 10px;
+    }
+  
+    .cta-button {
+      padding: 12px 15px;
+      font-size: 0.85rem;
+    }
+  }
+  
+  /* Add this for very small devices */
+  @media screen and (max-width: 360px) {
+    .hero-content h1 {
+      font-size: 1.4rem;
+      line-height: 1.25;
+    }
+  
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  }
