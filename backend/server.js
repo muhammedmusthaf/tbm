@@ -14,7 +14,7 @@ const app = express();
 
 // CORS Configuration
 app.use(cors({
-  origin: "http://localhost:5173", // Update if your frontend URL is different
+  origin: "https://tabassam.vercel.app", // Update if your frontend URL is different
   methods: ["POST"],
   credentials: true,
 }));
