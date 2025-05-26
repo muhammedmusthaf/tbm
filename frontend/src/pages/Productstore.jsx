@@ -85,7 +85,7 @@ const products = [
     {
       id: 11,
       title: "Tools & Hardware",
-      image: "assets/hard.jpg.crdownload",
+      image: "assets/bla.png",
       types: ["Hammers, Spades, Trowels", "Drills, Saws", "Measuring Tapes, Levels", "Screws, Bolts, Nails", "Adhesives (Fevicol, Araldite)"],
       description: "Essential construction and repair tools for professional and home use. Durable and easy to handle for any project.",
       icon: "🛠️",
