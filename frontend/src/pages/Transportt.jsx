@@ -32,7 +32,7 @@ const Transportt = () => {
     };
 
     try {
-      const res = await axios.post("http://localhost:4000/api/transport/submit", transportData);
+      const res = await axios.post("https://tbm-fqrq.onrender.com/api/transport/submit", transportData);
       console.log("Transport data submitted:", res.data);
       alert("Inquiry submitted successfully!");
     } catch (err) {

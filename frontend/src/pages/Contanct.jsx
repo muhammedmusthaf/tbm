@@ -16,7 +16,7 @@ const Contanct = () => {
     };
 
     try {
-      const response = await axios.post("http://localhost:4000/api/contact/contact-submit", data);
+      const response = await axios.post("https://tbm-fqrq.onrender.com/api/contact/contact-submit", data);
       console.log("Success:", response.data);
       alert("Message sent successfully!");
       // Clear form
