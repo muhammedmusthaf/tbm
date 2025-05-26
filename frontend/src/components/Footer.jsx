@@ -28,7 +28,7 @@ const Footer = () => {
                     <h3 className="footer-heading">Contact Info</h3>
                     <ul className="contact-info">
                         <li><FaPhone /> +91 7860006321</li>
-                        <li><FaEnvelope /> info@tbmbuildmart.com</li>
+                        <li><FaEnvelope /> tabassambuildmart@gmail.com</li>
                     </ul>
                 </div>
                 
