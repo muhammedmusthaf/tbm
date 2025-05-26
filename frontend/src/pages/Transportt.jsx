@@ -7,8 +7,8 @@ import React, { useRef } from 'react';
 const Transportt = () => {
   const vehicles = [
     { type: '16-Wheeler', capacity: '30 Tons', availability: 'Available', useCases: ['Cement', 'Steel Beams'], img: 'assets/truck1.jpg' },
-    { type: 'Mini-Truck', capacity: '5 Tons', availability: 'Limited', useCases: ['Tiles', 'Tools'], img: 'minitruck.jpg' },
-    { type: 'Pickup Van', capacity: '2 Tons', availability: 'Available', useCases: ['Hardware', 'Pipes'], img: 'pickup.jpg' },
+    { type: 'Mini-Truck', capacity: '5 Tons', availability: 'Limited', useCases: ['Tiles', 'Tools'], img: 'assets/laka.jpg' },
+    { type: 'Pickup Van', capacity: '2 Tons', availability: 'Available', useCases: ['Hardware', 'Pipes'], img: 'assets/pickup.jpg' },
   ];
 
   const serviceAreas = ['Andhra Pradesh','Tamil Nadu','Kerala','Karnataka','Telangana','Maharashtra','Goa','Puducherry','Delhi','Gujarat'];

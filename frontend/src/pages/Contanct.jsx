@@ -69,7 +69,7 @@ const Contanct = () => {
               </div>
               <div className="tbm-info-content">
                 <h4>Email</h4>
-                <p>support@buildmart.com</p>
+                <p>tabassambuildmart@gmail.com</p>
               </div>
             </div>
           </div>
