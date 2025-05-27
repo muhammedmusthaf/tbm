@@ -109,27 +109,27 @@ const Contanct = () => {
           <div className="tbm-form-row">
             <div className="tbm-form-group">
               <label htmlFor="name">Name</label>
-              <input type="text" id="name" />
+              <input type="text" id="name" required />
             </div>
             <div className="tbm-form-group">
               <label htmlFor="email">Email</label>
-              <input type="email" id="email" />
+              <input type="email" id="email" required />
             </div>
           </div>
           <div className="tbm-form-row">
             <div className="tbm-form-group">
               <label htmlFor="phone">Phone Number</label>
-              <input type="tel" id="phone" />
+              <input type="tel" id="phone" required />
             </div>
             <div className="tbm-form-group">
               <label htmlFor="subject">Subject</label>
-              <input type="text" id="subject" />
+              <input type="text" id="subject" required />
             </div>
           </div>
           <div className="tbm-form-row">
             <div className="tbm-form-group tbm-form-group-full">
               <label htmlFor="message">Message / Inquiry</label>
-              <textarea id="message"></textarea>
+              <textarea id="message" required></textarea>
             </div>
           </div>
           <div className="tbm-form-actions">

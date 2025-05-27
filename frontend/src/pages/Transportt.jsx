@@ -110,33 +110,33 @@ const Transportt = () => {
           <div className="trns-form-row">
             <div className="trns-input-group">
               <label><FaIdBadge /> Name</label>
-              <input type="text" placeholder="Your name" ref={nameRef} />
+              <input type="text" placeholder="Your name" ref={nameRef} required />
             </div>
             <div className="trns-input-group">
               <label><FaIdBadge /> Contact Number</label>
-              <input type="tel" placeholder="Phone number" ref={phoneRef} />
+              <input type="tel" placeholder="Phone number" ref={phoneRef} required />
             </div>
           </div>
 
           <div className="trns-form-row">
             <div className="trns-input-group">
               <label><FaMapMarkerAlt /> Email</label>
-              <input type="email" placeholder="Email address" ref={emailRef} />
+              <input type="email" placeholder="Email address" ref={emailRef} required />
             </div>
             <div className="trns-input-group">
               <label><FaMapMarkerAlt /> Delivery Location</label>
-              <input type="text" placeholder="Delivery address" ref={locationRef} />
+              <input type="text" placeholder="Delivery address" ref={locationRef} required />
             </div>
           </div>
 
           <div className="trns-form-row">
             <div className="trns-input-group">
               <label><FaTruck /> Material Type</label>
-              <input type="text" placeholder="e.g., Cement, Steel" ref={materialRef} />
+              <input type="text" placeholder="e.g., Cement, Steel" ref={materialRef} required />
             </div>
             <div className="trns-input-group">
               <label><FaWeightHanging /> Approx. Weight</label>
-              <input type="text" placeholder="Estimated weight" ref={weightRef} />
+              <input type="text" placeholder="Estimated weight" ref={weightRef} required />
             </div>
           </div>
 
